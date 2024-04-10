@@ -1,0 +1,278 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 80%;
+    height: 85vh;
+}
+
+main .back{
+    font-weight: 600;
+}
+
+main p{
+    color: #797c84
+}
+
+main h1{
+    font-weight: 700;
+    color: var(--black)
+}
+
+main h1 span{
+    color: var(--green);
+    font-weight: 700;
+}
+
+.choose{
+    width: 100%;
+    height: 90%;
+
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.choose img{
+    height: 35vh;
+}
+
+/* Оплата по реквизитам */
+.requisites{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.requisites h2, .requisites h3{
+    text-align: center;
+}
+
+.requisites h3{
+    margin-left: 2vh;
+}
+
+.requisites p{
+    margin: 2vh;
+
+    color: var(--black)
+}
+
+.requisites span{
+    font-weight: 600;
+
+    color: var(--green)
+}
+
+.description{
+    text-align: center;
+}
+
+/* Оплата по сбп или банковской картой */
+.sbp{
+    width: 40%;
+    height: 100%;
+}
+
+.sbp h2{
+    text-align: center;
+}
+
+.sum{
+    width: 100%;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sum button{
+    width: 5vw;
+    height: 6vh;
+
+    background-color: var(--green);
+    color: var(--white);
+    border: 0;
+    border-radius: 1px;
+}
+
+.sum button:hover{
+    border: 1px solid var(--black);
+}
+
+#summa{
+    width: 50%;
+    height: 6vh;
+
+    margin-left: 25%;
+    margin-bottom: 2vh;
+    
+    text-align: center;
+
+    border: 1px solid var(--d-gray);
+    border-radius: 5px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    color: var(--black);
+}
+
+.agreement{
+    width: 70%;
+
+    margin: 1vh 2vw;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    /* background: #000; */
+}
+
+.agreement input{
+    margin-left: 3vw;
+}
+
+.contact{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact input[type="text"], .contact input[type="email"]{
+    width: 50%;
+    height: 4vh;
+
+    border-radius: 5px;
+    border: 1px solid var(--d-gray)
+}
+
+
+.contact input[type="checkbox"]{
+    width: 50%;
+    height: 3vh;
+}
+
+.contact a{
+    width: 35%;
+    height: 6vh;
+
+    margin: 2vh 0;
+}
+
+.contact button{
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    border: 1px solid var(--green);
+    border-radius: 50vw;
+
+    background-color: var(--green);
+
+
+}
+
+.contact button:disabled{
+    opacity: .5;
+}
+
+@media (max-width: 1620px) {
+    .agreement{
+        width: 100%;
+        float: right;
+    }
+}
+
+@media (max-width: 1330px) {
+    main{
+        height: 200vh;    
+    }
+
+    .choose {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .requisites{
+        width: 70%;
+
+        border-bottom: 1px solid var(--green);
+    }
+
+    .sbp{
+        width: 70%;
+    }
+
+    .sum button{
+        width: 18%;
+    }
+
+    .agreement{
+        width: 50%;
+
+        float: left;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 720px) {
+    .choose{
+        margin-top: 10vh;
+    }
+
+    .requisites{
+        width: 100%;
+    }
+
+    .sbp{
+        width: 100%;
+    }
+
+    .agreement p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    main h1{
+        font-size: x-large;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .contact button{
+        width: 50vw;
+        margin-left: -10vw;
+    }
+}
+
+@media (max-height: 800px) {
+    main{
+        height: 220vh;
+    }
+}

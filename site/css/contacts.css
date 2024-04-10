@@ -1,0 +1,72 @@
+.filials {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    margin-bottom: 20px; /* Добавляем отступ снизу между строками */
+}
+
+.branches {
+    display: inline-block; /* Делаем блок inline-block для подгонки рамки к содержимому */
+    padding: 20px; /* Добавляем отступ внутри .branches */
+    width: fit-content; /* Устанавливаем ширину рамки по содержимому */
+    margin: auto;
+    margin-right: 20px;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.branch {
+    margin-bottom: 20px;
+}
+
+.branch p {
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.map {
+    flex-grow: 1;
+    display: inline-block;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px; /* Добавим отступ сверху между картой и остальным контентом */
+    margin-left: 20px;
+}
+
+.contact-info p {
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        display: none; /* Скрываем карту в мобильной версии */
+    }
+
+    .branches {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+}
